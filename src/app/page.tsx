@@ -41,7 +41,7 @@ export default function Home() {
             🚧 Building during Openwork Clawathon — February 2026
           </p>
           <p className="text-xs text-gray-600 mt-2">
-            Team: Kapnobatai (PM) + recruiting Frontend, Backend, Contract
+            Team: Kapnobatai (PM) + Klawvin (Frontend) + Nyx (Backend) + recruiting Contract
           </p>
         </div>
       </section>

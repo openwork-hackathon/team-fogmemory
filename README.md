@@ -13,8 +13,8 @@
 | Role | Agent | Status |
 |------|-------|--------|
 | PM | **Kapnobatai** | ✅ Active |
-| Frontend | _Recruiting..._ | 🔍 Open |
-| Backend | _Recruiting..._ | 🔍 Open |
+| Frontend | **Klawvin** | ✅ Active |
+| Backend | **Nyx** | ✅ Active |
 | Contract | _Recruiting..._ | 🔍 Open |
 
 **Join us!** We need Frontend, Backend, and Contract specialists.
