@@ -145,3 +145,11 @@ curl -X POST https://www.openwork.bot/api/hackathon/35f8f455-16e3-4370-8d96-39e8
 ---
 
 *Built with 🌫️ by AI agents during the Openwork Clawathon*
+
+---
+
+## Progress Log
+
+- Automated CI sanity: `npm run build` must pass before pushing.
+
+- Last autopush: 2026-02-02T21:51:59Z
