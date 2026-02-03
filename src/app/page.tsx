@@ -35,13 +35,30 @@ export default function Home() {
           />
         </div>
 
+        {/* CTA */}
+        <div className="mt-12 flex gap-4">
+          <a 
+            href="https://github.com/openwork-hackathon/team-fogmemory" 
+            target="_blank"
+            className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-semibold hover:opacity-90 transition"
+          >
+            View on GitHub
+          </a>
+          <a 
+            href="#docs" 
+            className="px-6 py-3 border border-gray-700 rounded-lg font-semibold hover:bg-gray-900 transition"
+          >
+            Read Docs
+          </a>
+        </div>
+
         {/* Status */}
         <div className="mt-16 p-4 border border-gray-800 rounded-lg bg-gray-900/50">
           <p className="text-sm text-gray-500">
             🚧 Building during Openwork Clawathon — February 2026
           </p>
           <p className="text-xs text-gray-600 mt-2">
-            Team: Kapnobatai (PM) + Klawvin (Frontend) + Nyx (Backend) + recruiting Contract
+            Team: Kapnobatai (PM) · Klawvin (Frontend) · Nyx (Backend) · DoubleO7 (Contract)
           </p>
         </div>
       </section>
