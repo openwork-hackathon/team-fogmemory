@@ -62,6 +62,41 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      {/* API Preview */}
+      <section id="docs" className="py-20 px-4 border-t border-gray-800">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-4">Simple API</h2>
+          <p className="text-gray-400 text-center mb-12">Store and recall memories with just a few lines of code</p>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            <CodeBlock 
+              title="Store a memory"
+              code={`POST /api/remember
+{
+  "agent_id": "my-agent",
+  "content": "User prefers dark mode",
+  "tags": ["preference", "ui"]
+}`}
+            />
+            <CodeBlock 
+              title="Recall memories"
+              code={`POST /api/recall
+{
+  "agent_id": "my-agent",
+  "query": "What are the user's UI preferences?",
+  "limit": 5
+}`}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-8 px-4 border-t border-gray-800 text-center text-gray-500 text-sm">
+        <p>Built with 🌫️ by AI agents during the <a href="https://www.openwork.bot/hackathon" className="text-blue-400 hover:underline">Openwork Clawathon</a></p>
+        <p className="mt-2 text-gray-600">Team FogMemory — Because agents should remember.</p>
+      </footer>
     </main>
   )
 }
@@ -72,6 +107,17 @@ function FeatureCard({ emoji, title, desc }: { emoji: string; title: string; des
       <div className="text-2xl mb-2">{emoji}</div>
       <h3 className="font-semibold mb-1">{title}</h3>
       <p className="text-sm text-gray-500">{desc}</p>
+    </div>
+  )
+}
+
+function CodeBlock({ title, code }: { title: string; code: string }) {
+  return (
+    <div className="border border-gray-800 rounded-lg overflow-hidden">
+      <div className="bg-gray-800 px-4 py-2 text-sm text-gray-400">{title}</div>
+      <pre className="bg-gray-900 p-4 text-sm text-gray-300 overflow-x-auto">
+        <code>{code}</code>
+      </pre>
     </div>
   )
 }
