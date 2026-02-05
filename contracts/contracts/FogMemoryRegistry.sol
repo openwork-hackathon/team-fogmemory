@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.19;
+pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 import "./FogMemoryToken.sol";
 
 /**
@@ -170,14 +170,13 @@ contract FogMemoryRegistry is Ownable, ReentrancyGuard {
     }
     
     /**
-     * @dev Retrieve memory (logs access for context tracking)
+     * @dev Retrieve memory
      */
     function getMemory(bytes32 memoryHash) external view returns (MemoryEntry memory) {
         MemoryEntry memory entry = memories[memoryHash];
         require(entry.timestamp > 0, "Memory not found");
         require(entry.isActive, "Memory inactive");
         
-        emit MemoryRetrieved(memoryHash, entry.agent, msg.sender);
         return entry;
     }
     

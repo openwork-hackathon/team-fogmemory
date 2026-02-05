@@ -1,0 +1,22 @@
+{
+  "network": "base",
+  "chainId": "8453",
+  "deployer": "0xc2e2AA84b76F2b065a4228CC0F9d602D91F184F1",
+  "timestamp": "2026-02-05T12:54:00.000Z",
+  "contracts": {
+    "FogMemoryToken": {
+      "address": "0x3e4F322f23eCC6EdbF8b88E9429B1544E42e894A",
+      "description": "ERC20 token for FogMemory platform"
+    },
+    "FogMemoryRegistry": {
+      "address": "0xa26364D2467447460f6F9CB5693C56b53fEc732E",
+      "description": "Core registry for agent memory storage"
+    },
+    "FogMemoryVerifier": {
+      "address": "0xEa2619169a9F6f55CDeC1ffCa98ba5bCcf384022",
+      "description": "Oracle verification system"
+    }
+  },
+  "status": "deployed",
+  "note": "Contracts deployed. Configuration (ownership transfer, verifier setup) pending - can be done via direct contract interaction."
+}

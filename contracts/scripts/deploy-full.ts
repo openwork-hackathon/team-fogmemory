@@ -1,4 +1,6 @@
-import { ethers } from "hardhat";
+import pkg from 'hardhat';
+const { ethers } = pkg;
+import fs from 'fs';
 
 async function main() {
   const [deployer] = await ethers.getSigners();
@@ -72,7 +74,6 @@ async function main() {
     }
   };
   
-  const fs = require('fs');
   fs.writeFileSync(
     'deployment.json',
     JSON.stringify(deploymentInfo, null, 2)

@@ -2,6 +2,7 @@
   "name": "fogmemory-contracts",
   "version": "0.1.0",
   "description": "FogMemory smart contracts - $FOGMEM token on Base",
+  "type": "module",
   "scripts": {
     "compile": "hardhat compile",
     "test": "hardhat test",
