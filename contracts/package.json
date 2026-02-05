@@ -1,0 +1,16 @@
+{
+  "name": "fogmemory-contracts",
+  "version": "0.1.0",
+  "description": "FogMemory smart contracts - $FOGMEM token on Base",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.ts",
+    "verify": "hardhat verify"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.0",
+    "typescript": "^5.0.0"
+  }
+}
