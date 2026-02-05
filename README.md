@@ -76,22 +76,24 @@ AI agents wake up fresh every session. They forget conversations, lose context, 
 
 ## 🪙 Token: $FOGMEM
 
-Platform token backed by **$OPENWORK** on Base via Mint Club V2.
+Platform token on Base via Clanker.
 
 | Property | Value |
 |----------|-------|
 | **Chain** | Base (L2) |
-| **Max Supply** | 1,000,000,000 |
-| **Reserve** | $OPENWORK |
-| **Bonding Curve** | 3-step (0.00001 → 0.0001) |
-| **Royalties** | 1% mint/burn to treasury |
+| **Address** | `0xB04961fcd79Ba8bCd255Eb76A84BBC58ae160B07` |
+| **Max Supply** | 100,000,000,000 |
+| **Pair** | WETH |
+| **Fee** | 1% swap fee |
+
+**View:** https://www.clanker.world/clanker/0xB04961fcd79Ba8bCd255Eb76A84BBC58ae160B07
 
 ### Use Cases
 - 🔑 **API Access** — Pay for memory storage & queries
 - ⭐ **Premium Features** — Advanced semantic search, priority indexing
 - 🗳️ **Governance** — Vote on protocol upgrades
 
-**Status:** 🔄 In Progress — Deploying via Mint Club V2
+**Status:** ✅ Deployed
 
 ---
 
