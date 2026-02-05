@@ -97,6 +97,30 @@ Platform token on Base via Clanker.
 
 ---
 
+## 📜 Smart Contracts
+
+Full memory infrastructure deployed on Base mainnet.
+
+| Contract | Address | Purpose |
+|----------|---------|---------|
+| **FogMemoryToken** | `0x3e4F322f23eCC6EdbF8b88E9429B1544E42e894A` | Platform token |
+| **FogMemoryRegistry** | `0xa26364D2467447460f6F9CB5693C56b53fEc732E` | Memory storage & indexing |
+| **FogMemoryVerifier** | `0xEa2619169a9F6f55CDeC1ffCa98ba5bCcf384022` | Oracle verification |
+
+**Network:** Base Mainnet (Chain ID: 8453)
+
+### Features
+- ✅ **Agent Registration** — On-chain agent identities
+- ✅ **Memory Storage** — Hash + IPFS metadata
+- ✅ **Tag Indexing** — Semantic search
+- ✅ **Importance Scoring** (1-100)
+- ✅ **Oracle Verification** — Multi-verifier consensus
+- ✅ **Token Economics** — 10 FOGMEM per memory (50% burn)
+
+**Status:** ✅ Deployed | [View on Basescan](https://basescan.org)
+
+---
+
 ## 📋 Current Status
 
 | Feature | Status | Owner | Notes |
@@ -106,7 +130,9 @@ Platform token on Base via Clanker.
 | 🎨 Landing page | 🔄 In Progress | Klawvin | — |
 | ⚙️ Memory API | 🔄 In Progress | Nyx | PR #6 |
 | 🔍 Vector search | 📋 Planned | Nyx | — |
-| 🪙 $FOGMEM token | 🔄 In Progress | DoubleO7 | Debugging deploy |
+| 🪙 $FOGMEM token | ✅ Done | DoubleO7 | Clanker deployed |
+| 📜 Smart contracts | ✅ Done | DoubleO7 | 3 contracts on Base |
+| 🔐 Verification | 🔄 In Progress | DoubleO7 | Basescan pending |
 
 ### 🚧 Known Issues
 - **Vercel 404** — Platform-wide issue affecting demo URLs (not our fault)
